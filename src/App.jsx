@@ -1,13 +1,18 @@
 import React from 'react'
-import Header from './COMPONENTS/Header'
 import Main from './COMPONENTS/Main'
 import Footer from './COMPONENTS/Footer'
+import Navbar from './HOME/Navbar'
+import { Route, Routes } from 'react-router'
+import ABOUTUS from './HOME/ABOUTUS'
 
 export default function App() {
   return (
     <div>
-      <Header/>
-      <Main/>
+<Navbar/>
+<Routes>
+<Route path='/'  element={<Main/>}/>
+<Route path='/ABOUTUS'  element={<ABOUTUS/>}/>
+</Routes>
       <Footer/>
     </div>
   )

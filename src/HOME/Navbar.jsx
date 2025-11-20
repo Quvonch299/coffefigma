@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router'
 
 export default function Navbar() {
     
@@ -9,8 +10,8 @@ export default function Navbar() {
                 <img src="./NavbarLogo.svg" alt=""/>
             </div>
             <div className='flex gap-[32px]'>
-                <a style={{fontFamily: 'Barlow, sans-serif'}} href="">HOME</a>
-                <a style={{fontFamily: 'Barlow, sans-serif'}} href="">ABOUT US</a>
+                <Link to={'/'} style={{fontFamily: 'Barlow, sans-serif'}} >HOME</Link>
+                <Link to={'/ABOUTUS'} style={{fontFamily: 'Barlow, sans-serif'}} >ABOUT US</Link>
                 <a className=' uppercase' style={{fontFamily: 'Barlow, sans-serif' }} href="">Create your plan</a>
             </div>
         </div>

@@ -4,4 +4,6 @@
 a{
   font-family: 'Barlow', sans-serif;
 }
-  
+  .bitmap{
+    background: url(/public/Bitmap.jpg) no-repeat center/cover;
+  }

@@ -5,7 +5,7 @@ export default function ChooseOne() {
     <div className=' mt-[250px]'>
 
       <div className="w-full  py-20 px-6 max-w-7xl m-auto">
-        <div className="relative w-full max-w-4xl  mb-16">
+        <div className="relative w-[819px] max-w-4xl  mb-16">
           <div className="h-[2px] bg-[#c6d9d2] w-full"></div>
           <div className="absolute -top-3 -left-2 w-6 h-6 rounded-full border-2 border-[#0e7368]  "></div>
           <div className="absolute -top-3 left-1/2 -translate-x-1/2 w-6 h-6 rounded-full border-2 border-[#0e7368]  "></div>

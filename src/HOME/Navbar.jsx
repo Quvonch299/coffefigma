@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { CiMenuBurger } from 'react-icons/ci';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);

@@ -21,7 +21,7 @@ export default function ChooseOne() {
               Select from our evolving range of artisan <br/> coffees. Our beans are ethically sourced <br/>and we pay fair prices for them.
               There are <br/> new coffees in all profiles every month <br/> for you to try out.
             </p>
-            <button className="mt-6 bg-[#0e7368] text-white px-6 py-3 rounded-md font-semibold hover:bg-[#0c5f57] transition">
+            <button className="hover:bg-[#66D2CF] transition-all cursor-pointer duration-200 mt-6 bg-[#0e7368] text-white px-6 py-3 rounded-md font-semibold hover:bg-[#0c5f57] transition">
               Create your plan
             </button>
           </div>

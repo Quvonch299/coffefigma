@@ -85,7 +85,7 @@ export default function CreatePlanSec3() {
               
             </div>
             <div  className=' flex justify-end  '>
-              <button onClick={()=>{setModal(true)}} className='h-[56px] w-[217px] rounded-2xl font-black hover:cursor-pointer bg-[#0E8784] active:bg-[#66D2CF] duration-500 text-[#FFFF] '  style={{fontFamily:'Fraunces'}}>Create my plan!</button>
+              <button onClick={()=>{setModal(true)}} className='hover:bg-[#66D2CF] transition-all cursor-pointer duration-200  h-[56px] w-[217px] rounded-2xl font-black hover:cursor-pointer bg-[#0E8784] active:bg-[#66D2CF] duration-500 text-[#FFFF] '  style={{fontFamily:'Fraunces'}}>Create my plan!</button>
             </div>
           </div>
         </div>

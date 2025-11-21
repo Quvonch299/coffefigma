@@ -41,7 +41,7 @@ export default function CartTitle({text,title, MainTitle}) {
         cards.map(card => (
           <div
             key={card.id}
-           onClick={() => setActive(prev => (prev === card.id ? null : card.id))}
+           onClick={() => setActive(prev => (prev == card.id ? null : card.id))}
             className={`h-[250px] transition-all cursor-pointer w-[228px] opacity-75 rounded-2xl 
               ${active == card.id ? "bg-[#0E8784] text-white" : "bg-[#F4F1EB]" }
               flex justify-center`}

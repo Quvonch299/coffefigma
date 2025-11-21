@@ -7,3 +7,6 @@ a{
   .bitmap{
     background: url(/public/Bitmap.jpg) no-repeat center/cover;
   }
+  .plan{
+    background: url(/public/plan.png) no-repeat center/cover;
+  }

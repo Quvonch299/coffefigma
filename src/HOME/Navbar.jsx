@@ -12,7 +12,7 @@ export default function Navbar() {
             <div className='flex gap-[32px]'>
                 <Link to={'/'} style={{fontFamily: 'Barlow, sans-serif'}} >HOME</Link>
                 <Link to={'/ABOUTUS'} style={{fontFamily: 'Barlow, sans-serif'}} >ABOUT US</Link>
-                <a className=' uppercase' style={{fontFamily: 'Barlow, sans-serif' }} href="">Create your plan</a>
+                <Link to={'/CreativePlon'} className=' uppercase' style={{fontFamily: 'Barlow, sans-serif' }} >Create your plan</Link>
             </div>
         </div>
     </div>

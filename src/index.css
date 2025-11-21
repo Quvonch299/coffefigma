@@ -1,12 +1,14 @@
-@import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+@import "tailwindcss/preflight";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
+/* Google Fonts loaded from index.html */
 a{
   font-family: 'Barlow', sans-serif;
 }
-  .bitmap{
-    background: url(/public/Bitmap.jpg) no-repeat center/cover;
-  }
-  .plan{
-    background: url(/public/plan.png) no-repeat center/cover;
-  }
+.bitmap{
+  background: url(/Bitmap.jpg) no-repeat center/cover;
+}
+.plan{
+  background: url(/plan.png) no-repeat center/cover;
+}

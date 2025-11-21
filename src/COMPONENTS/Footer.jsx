@@ -4,7 +4,7 @@ import { GiCoffeeBeans } from 'react-icons/gi'
 
 export default function Footer() {
     return (
-        <footer className="max-w-7xl m-auto bg-[#2C343E] py-9">
+        <footer className="max-w-7xl m-auto bg-[#2C343E] py-9 mb-[5px]">
             <div className="max-w-7xl mx-auto px-9 flex items-center justify-between">
                 <div className="flex items-center gap-3">
                     <GiCoffeeBeans className="text-[#0E9187] text-2xl" />

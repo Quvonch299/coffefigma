@@ -4,9 +4,9 @@ import { FaGift } from "react-icons/fa";
 export default function WhyChooseUsExact() {
   return (
     <section className="mt-[200px]">
-      <div className="max-w-6xl mx-auto px-6 relative">
+      <div className="max-w-9xl m-auto flex justify-center px-6 relative">
 
-        <div className="bg-[#22272b] text-white rounded-xl p-12 md:p-16 shadow-inner relative h-[577px]">
+        <div className="bg-[#22272b] text-white rounded-xl p-12 md:p-16 shadow-inner w-[1280px] relative h-[577px]">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-semibold mb-4">Why choose us?</h2>
             <p className="text-gray-300 text-sm md:text-base leading-relaxed">

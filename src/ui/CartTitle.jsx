@@ -37,10 +37,11 @@ export default function CartTitle({text,title, MainTitle}) {
         className={`grid grid-cols-3 gap-[23px] overflow-hidden transition-all duration-300 
         ${open ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"}`}
       >
-        {cards.map(card => (
+        {
+        cards.map(card => (
           <div
             key={card.id}
-            onClick={() => setActive(card.id)}
+           onClick={() => setActive(prev => (prev === card.id ? null : card.id))}
             className={`h-[250px] transition-all cursor-pointer w-[228px] opacity-75 rounded-2xl 
               ${active == card.id ? "bg-[#0E8784] text-white" : "bg-[#F4F1EB]" }
               flex justify-center`}

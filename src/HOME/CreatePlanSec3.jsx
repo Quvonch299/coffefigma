@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
 import CartTitle from '../ui/CartTitle';
+import CreatePlanModal from './CreatePlanModal';
 
 export default function CreatePlanSec3() {
   const [activeIndex, setActiveIndex] = useState(null);
+  const [modal, setModal] = useState(false);
 
   return (
     <div>
@@ -62,7 +64,7 @@ export default function CreatePlanSec3() {
             </span>
 
           </div>
-          <div className='grid gap-[88px] mb-[168px]'>
+          <div className='grid gap-[68px] mb-[168px]'>
             <CartTitle MainTitle={'How do you drink your coffee?'} title={'Capsule'} text={'ompatible with Nespresso systems and similar brewers'} />
             <CartTitle MainTitle={'What type of coffee?'} title={'Single Origin'} text={'Just like regular coffee, except the caffeine has been removed'} />
             <CartTitle MainTitle={'How much would you like?'} title={'250g'} text={'Perfect option for a couple. Yields about 40 delectable cups.'} />
@@ -82,12 +84,15 @@ export default function CreatePlanSec3() {
               </p>
               
             </div>
-            <div className='mt-[55px] flex justify-end  '>
-              <button className='h-[56px] w-[217px] rounded-2xl font-black hover:cursor-pointer bg-[#0E8784] active:bg-[#66D2CF] duration-500 text-[#FFFF] '  style={{fontFamily:'Fraunces'}}>Create my plan!</button>
+            <div  className=' flex justify-end  '>
+              <button onClick={()=>{setModal(true)}} className='h-[56px] w-[217px] rounded-2xl font-black hover:cursor-pointer bg-[#0E8784] active:bg-[#66D2CF] duration-500 text-[#FFFF] '  style={{fontFamily:'Fraunces'}}>Create my plan!</button>
             </div>
           </div>
         </div>
       </div>
+      {
+        modal && <CreatePlanModal setModal={setModal}/>
+      }
     </div>
   )
 }

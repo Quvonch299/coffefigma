@@ -4,16 +4,16 @@ import { BiCloset } from 'react-icons/bi';
 
 export default function CreatePlanModal({ setModal }) {
   return (
-    <div className="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center z-50">
-      <div className="bg-white rounded-lg shadow-2xl  w-[540px] h-[597px] overflow-hidden">
-        <div className="bg-[#2F3A3F] px-6 h-[136px] flex justify-between items-center">
+    <div className="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center z-50 p-4">
+      <div className="bg-white rounded-lg shadow-2xl w-full md:w-[540px] max-h-[90vh] overflow-y-auto">
+        <div className="bg-[#2F3A3F] px-4 md:px-6 py-6 md:py-0 h-auto md:h-[136px] flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
           <h2
-            className="text-white text-[40px] font-black"
+            className="text-2xl md:text-[40px] font-black text-white"
             style={{ fontFamily: 'Fraunces' }}
           >
             Order Summary
           </h2>
-          <AiOutlineClose onClick={()=>{setModal(false)}} size={20}/>
+          <AiOutlineClose onClick={()=>{setModal(false)}} size={20} className="text-white cursor-pointer"/>
         </div>
         <div className="px-6 py-6 mt-[57px]">
           <p style={{fontFamily:'Fraunces'}} className="text-gray-800 ml-[56px] text-sm  text-[24px] font-bold  ">
